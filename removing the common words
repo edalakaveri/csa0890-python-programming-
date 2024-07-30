@@ -1,0 +1,22 @@
+# Given sentences
+s1 = "the quick brown fox jumps over the lazy dog"
+s2 = "the quick blue fox jumps over the lazy cat"
+
+# Split sentences into words
+words1 = s1.split()
+words2 = s2.split()
+
+# Identify common words
+common_words = set(words1) & set(words2)
+
+# Remove common words from both sentences
+filtered_words1 = [word for word in words1 if word not in common_words]
+filtered_words2 = [word for word in words2 if word not in common_words]
+
+# Join the remaining words back into sentences
+result1 = ' '.join(filtered_words1)
+result2 = ' '.join(filtered_words2)
+
+# Print the results
+print("Resultant Sentence 1:", result1)
+print("Resultant Sentence 2:", result2)
