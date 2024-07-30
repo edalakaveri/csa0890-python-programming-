@@ -1,0 +1,14 @@
+# Sample input
+sentence = "The cat on the wall"
+
+# Split the sentence into words
+words = sentence.split()
+
+# Extract the first letter of each word
+first_letters = [word[0].upper() for word in words]
+
+# Join the first letters with a dot separator
+result = '.'.join(first_letters) + '.'
+
+# Print the result
+print(result)
