@@ -1,0 +1,9 @@
+strs = ["eat", "tea", "tan", "ate", "nat", "bat"]
+anagram_dict = {}
+for s in strs:
+    key = ''.join(sorted(s))
+    if key not in anagram_dict:
+        anagram_dict[key] = []
+    anagram_dict[key].append(s)
+result = list(anagram_dict.values())
+print(result)
